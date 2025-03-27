@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>Click Here!</button>
+
+    <script>
+        let button = document.querySelector("button");
+        //the click event works in any element like div,p and also button is more used
+        //it works when click the button
+        // button.addEventListener("click",function(){
+        //     alert("button was clicked")
+        // });
+        // it is similar to the click it works when double click the button
+        button.addEventListener("dblclick" ,function() {
+            alert("function was double clicked");
+        });
+        button.style.backgroundColor = "red";
+        button.style.border= "none";
+        button.style.borderRadius = "3px";
+        button.style.color = "white";
+        button.style.cursor="pointer";
+    </script>
+</body>
+</html>

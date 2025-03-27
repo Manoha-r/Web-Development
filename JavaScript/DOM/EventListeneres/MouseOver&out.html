@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div {
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            border: none;
+            border-radius: 30px;
+            transition: background-color 0.3s; /* Added transition in CSS */
+        }
+    </style>
+</head>
+<body>
+    <div class="div"></div>
+
+    <script>
+        let div = document.querySelector(".div");
+
+        // Change background color when mouse enters
+        div.addEventListener("mouseover", function() {
+            this.style.backgroundColor = "red";
+        });
+
+        // Change background color when mouse leaves
+        div.addEventListener("mouseout", function() {
+            this.style.backgroundColor = "orange";
+        });
+    </script>
+</body>
+</html>

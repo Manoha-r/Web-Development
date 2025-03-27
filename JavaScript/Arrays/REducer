@@ -1,0 +1,13 @@
+// the function reduces to the 1 element and have two parameters called acculmulator and elment in array
+//accumulator means store the previous step values
+
+let arr = [1, 2, 3, 4];
+
+let sum = arr.reduce((s,ele) => s+ele);
+
+console.log(sum);
+
+//finding max value in array
+let max = arr.reduce( (item , ele) => item < ele ? ele : item);
+
+console.log(max);

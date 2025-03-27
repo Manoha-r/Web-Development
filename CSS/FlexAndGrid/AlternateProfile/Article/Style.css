@@ -1,0 +1,77 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing:border-box
+}
+.container{
+    width:70%;
+    height:500px;
+    background-color: #222831;
+    display:flex;
+    padding: 10px;
+    margin:20px auto;
+    border:2px solid black;
+    border-radius:20px;
+    animation: space 2s linear 0 infinite;
+}
+.container:hover{
+    box-shadow: 0 0 20px rgb(10, 3, 76);
+}
+@keyframes spin{
+    from{
+        transform: scale(1);
+    }
+    to{
+        transform: scale(1.2);
+    }
+}
+.image{
+    border:2px solid white;
+    border-radius: 20px;
+}
+.main-iamge{
+    width:450px;
+    height:470px;
+    border-radius: 20px;
+    object-fit:fill;
+}
+h3{
+    width:500px;
+    font-size: 50px;
+    margin-left:20px;
+    color:white;
+    margin-top:10px;
+
+}
+.content>p{
+    width:610px;
+    font-size:20px;
+    color:white;
+    margin:10px;
+    margin-left:20px;
+    padding-top:10px;
+}
+.profile{
+    position:absolute;
+    margin:20px;
+    display:flex;
+    align-items: center;
+}
+.profile-image{
+    width:100px;
+    border-radius:50%;
+    height:100px;
+}
+h6{
+    font-size:20px;
+    padding:20px;
+    padding-bottom: 0;
+}
+.profile>div>p{
+    font-size:18px;
+    font-weight:bold;
+    padding:20px;
+    padding-top:0px;
+    color: #777;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <input type="text" placeholder="enter userName">
+        <input type="password" placeholder="enter password">
+        <button>Register</button>
+    </form>
+    <script>
+        let form = document.querySelector("form");
+        
+        //it works when release the key
+        form.addEventListener("keyup",function(event){
+            event.preventDefault();
+            console.log("key was released");
+        });
+
+        //it works when pressed the key
+
+        form.addEventListener("keydown" , function(event){
+            console.log("key was pressed");
+            console.log(`${event.code} and key is ${event.key}`)
+        });
+    </script>
+</body>
+</html>

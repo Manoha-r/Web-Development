@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" placeholder="enter your name">
+    <h2>hello</h2>
+
+    <script>
+        let input = document.querySelector("input");
+
+        input.addEventListener("change",function(){
+            let str = input.value;
+            let dummy ="";
+            let letters = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
+            for(let i = 0 ;i < str.length ; i++){
+                if(str.charAt(i) == ' ' || letters.indexOf(str.charAt(i)) != -1){
+                    dummy += str.charAt(i);
+                }
+            }
+            let h = document.querySelector("h2");
+            h.innerText = dummy;
+        });
+    </script>
+</body>
+</html>

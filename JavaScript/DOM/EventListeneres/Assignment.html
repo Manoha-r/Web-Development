@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button{
+            border : none;
+            width : 100px;
+            height : 40px;
+            border-radius: 4px;
+            background-color: red;
+            transition : background-color 0.4s;
+        }
+    </style>
+</head>
+<body>
+ <script>
+    let btn = document.createElement("button");
+    btn.innerText="Click here!"
+    btn.style.color ="white";
+    document.body.append(btn);
+    btn.addEventListener("click" , function() {
+        btn.style.backgroundColor = "green";
+    });
+ </script>
+</body>
+</html>

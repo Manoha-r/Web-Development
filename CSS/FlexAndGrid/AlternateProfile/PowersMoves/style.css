@@ -1,0 +1,48 @@
+body{
+    min-height:100vh;
+    background-color: #01072b;
+    display: grid;
+    place-items: center;
+    font-family: Arial, sans-serif;
+}
+.container{
+    max-width:300px;
+    border:1px solid #00c6c2;
+    padding:20px;
+    background-color: #001842;
+    border-radius:8px;
+    color:white;
+    text-align: center;
+    font-size:16px;
+    font-weight: 400;
+}
+
+.button-contaier{
+    margin-top:26px;
+}
+button {
+    border:none;
+    color:inherit;
+    padding:15px 20px;
+    border-radius:3px;
+    cursor: pointer;
+    transition: flex-grow 0.5s ease;
+}
+.accept-btn{
+    background-color: #28a745;
+}
+.reject-btn{
+    background-color: #dc3545;
+}
+.button-contaier{
+    display: flex;
+    gap:10px;
+}
+button{
+    flex-grow:1;
+}
+
+button:hover{
+    flex-grow:3
+}
+

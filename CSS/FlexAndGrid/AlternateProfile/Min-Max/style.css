@@ -1,0 +1,27 @@
+body{
+    font-family:arial,sans-serif;
+    min-height:100vh;
+    display: grid;
+    place-items: center;
+}
+.container{
+    border:2px solid black;
+    border-radius:10px;
+    padding:20px;
+    overflow:scroll;
+    resize:horizontal;
+    width:100%;
+}
+.item{
+    background-color: #00c6c2;
+    border:2px solid black;
+    display: grid;
+    place-items: center;
+    padding:20px;
+    border-radius: 8px;
+}
+.container{
+    display: grid;
+    grid-template-columns:repeat(3,minmax(1fr));
+    gap:10px;
+}

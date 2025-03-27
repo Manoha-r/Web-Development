@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Quantico:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Cube.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: white;
+    font-family: "Quantico", serif;
+} 
+
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.con {
+    display: inline-flex;
+    perspective: 1000px;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    animation: loading 1.5s ease-in-out infinite;
+}
+
+.face {
+    background-color: black;
+    width: 200px;
+    height: 200px;
+    border: 2px solid black;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cube1, .cube2, .cube3, .cube4 {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: moveUp 2s infinite ease-in-out,moveUp 1.5s ease-in-out infinite;
+}
+
+.cube1 {
+    transform: rotate3d(-1, -1, 0, 45deg);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 0s;
+}
+
+.cube2 {
+    transform: rotate3d(-1, -1, 0, 45deg) translateY(30px) translateX(20px) translateZ(20px);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 0.5s; 
+}
+
+.cube3 {
+    transform: rotate3d(-1, -1, 0, 45deg) translateY(60px) translateX(40px) translateZ(40px);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 1s; 
+}
+
+.cube4 {
+    transform: rotate3d(-1, -1, 0, 45deg) translateY(90px) translateX(60px) translateZ(60px);
+    /* try this by un commenting this
+    animation: rotate 2s infinite ease-in-out; */
+    animation-delay: 1.5s; 
+}
+
+
+.top {
+    background: linear-gradient( #00ADB5, #EEEEEE);
+    transform: translateY(-100px) rotateX(90deg);
+}
+
+.left {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: rotateY(90deg) translateZ(100px);
+}
+
+.right {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: rotateY(-90deg) translateZ(100px);
+}
+
+.back {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: translateZ(-100px);
+}
+
+.bottom {
+    background: #393E46;
+    border: none;
+    border-radius: 10px;
+    transform: rotateX(90deg) translateZ(-110px);
+    box-shadow: 0 0 20px aqua,
+                0 0 40px aqua,
+                0 0 60px aqua,
+                0 0 80px aqua,
+                0 0 100px aqua;
+}
+
+.front {
+    background: linear-gradient(#00ADB5, #EEEEEE);
+    transform: translateZ(100px);
+}
+
+@keyframes loading {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+
+    100%{
+        transform: rotateY(360deg);
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="cube1">        
+        <div class="face top">TOP</div>
+        <div class="face front">FRONT</div>
+        <div class="face right">RIGHT</div>
+        <div class="face left">LEFT</div>
+        <div class="face back">BACK</div>
+        <div class="face bottom">BOTTOM</div>
+        </div>
+        <div class="cube2">        
+            <div class="face top">TOP</div>
+            <div class="face front">FRONT</div>
+            <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div>
+            <div class="face back">BACK</div>
+            <div class="face bottom">BOTTOM</div>
+        </div>
+        <div class="cube3">        
+            <div class="face top">TOP</div>
+            <div class="face front">FRONT</div>
+            <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div>
+            <div class="face back">BACK</div>
+            <div class="face bottom">BOTTOM</div>
+        </div>
+        <div class="cube4">        
+            <div class="face top">TOP</div>
+            <div class="face front">FRONT</div>
+            <div class="face right">RIGHT</div>
+            <div class="face left">LEFT</div>
+            <div class="face back">BACK</div>
+            <div class="face bottom">BOTTOM</div>
+        </div>
+    </div>
+</body>
+</html>
