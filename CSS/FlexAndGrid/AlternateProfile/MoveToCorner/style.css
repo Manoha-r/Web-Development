@@ -1,0 +1,26 @@
+body{
+    display: grid;
+    place-items:center;
+    min-height : 100vh;
+}
+
+.photo{
+    display:grid;
+    height:300px;
+    width:200px;
+    background-image: url('https://images.pexels.com/photos/28811827/pexels-photo-28811827/free-photo-of-stunning-aerial-view-of-mountain-road-in-canada.jpeg');
+    background-size: cover;
+    padding:10px;
+    border-radius : 10px;
+    box-shadow : 3px 3px 10px rgba(0, 0, 0,0.4);
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.caption{
+    width : 15ch;
+    color:cyan;
+    font-size:1rem;
+    text-align: right;
+}
