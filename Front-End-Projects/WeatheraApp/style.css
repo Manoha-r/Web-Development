@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0; 
+}
+
+.container {
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    display : flex;
+    justify-content: center;
+    align-items : center;
+}
+
+.weather-box{
+    border : 3px solid white;
+    width : 18rem;
+    height : 18rem;
+    border-radius: 10px;
+    display: grid;
+    place-items : center;
+    color:white;
+}
+
+#temp{
+    font-size : 5rem;
+}
+#celcius{
+    font-size : 5rem;
+}
+
+.weather-icon{
+    margin : 0px;
+    padding : 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-icon > p{
+    display: inline;
+    margin-left : 5px;
+    font-size: 1.4rem;
+}
+.date-time{
+    font-size : 1;
+    color :black;
+}
+.date-time> p{
+    display: inline;
+    letter-spacing : 2px;
+    color :white;
+    margin-left : 10px;
+}
+.input{
+    border: none;
+    border-bottom: 1px solid white;
+    background: transparent;
+    outline : none;
+    color : black;
+    font-size : 16px;
+    width : 120px;
+    padding : 8px;    
+}
+.input::placeholder {
+    color: white; 
+    opacity: 0.7; 
+}
+button{
+   background: transparent;
+   font-size : 1.1rem;
+    color : white;
+    width : 80px;
+    padding : 8px;
+    border : 2px solid white;
+    border-radius: 3px;
+    letter-spacing: 1.2px;
+    margin-left: 1rem;
+}
+
+
+button:hover{
+    background-color: rgb(89, 189, 255);
+    border : none;
+}

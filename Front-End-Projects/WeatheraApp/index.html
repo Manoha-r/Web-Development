@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+    <div class="container">
+        <div class="weather-box">
+            <div class="temperature">
+                <span id="temp">--</span>
+                <span id ="celcius">°C</span>
+            </div>
+            <div class="weather-icon">
+                <img width="48" height="48" src="https://img.icons8.com/color/48/partly-cloudy-day--v1.png" alt="partly-cloudy-day--v1" id="icon"/>
+                <p class="weather-para">Weather</p>
+            </div>
+            <div class="date-time">
+                Time :<p id="time">--</p>&nbsp;&nbsp;&nbsp;
+                Date : <p id="date">--:--:--</p>
+            </div>
+            
+        <div class="input-box">
+            <input type="text" class="input" placeholder="Enter location">
+            <button>click</button>
+        </div>
+        </div>
+    </div>
+    <script src="sctipt.js"></script>
+</body>
+</html>
