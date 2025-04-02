@@ -12,15 +12,22 @@
     align-items : center;
 }
 
-.weather-box{
-    border : 3px solid white;
-    width : 18rem;
-    height : 18rem;
+.weather-box {
+    /* border: 3px solid white; */
+    width: 18rem;
+    height: 18rem;
     border-radius: 10px;
     display: grid;
-    place-items : center;
-    color:white;
+    place-items: center;
+    color: white;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
+
+.weather-box:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.6);
+}
+
 
 #temp{
     font-size : 5rem;
@@ -73,7 +80,7 @@ button{
     width : 80px;
     padding : 8px;
     border : 2px solid white;
-    border-radius: 3px;
+    border-radius: 10px;
     letter-spacing: 1.2px;
     margin-left: 1rem;
 }
@@ -83,4 +90,5 @@ button:hover{
     background-color: rgb(89, 189, 255);
     border : none;
     box-shadow: 3px 3px 10px rgba(0 , 0 , 0 ,0.4);
+    transform: scale(1.2);
 }
